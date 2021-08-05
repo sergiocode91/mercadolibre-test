@@ -1,8 +1,8 @@
 <img src="https://github.com/srojas091/angular-listar-productos/blob/master/src/assets/images/angular.png" alt="angular" width="100" height="100">
 
-# Consumiento API REST The Movie DB
+# Consumiento API Mercado Libre
 
-Este proyecto ha sido generado con [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+Este proyecto ha sido generado con [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
 
 ## Guía de instalación
 
