@@ -1,0 +1,12 @@
+<div *ngIf="article" class="ml-container">
+  <img [src]="article.picture" [alt]="article.title" />
+  {{ article.condition === "new" ? "Nuevo" : "Usado" }} -
+  {{ article.sold_quantity }} vendidos
+  {{ article.title }}
+  {{ article.price.currency }} {{ article.price.decimals | number }}
+  <span *ngIf="!article.free_shipping" class="ml-shipping-icon"></span>
+  <button type="button">Comprar</button>
+  <br>
+  <div class="ml-title">Descripción del producto</div>
+  {{ article.description }}
+</div>

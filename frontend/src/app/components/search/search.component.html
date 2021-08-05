@@ -1,0 +1,4 @@
+<form #searchForm="ngForm" (ngSubmit)="searchForm.valid && onSearch()">
+  <input type="text" class="form-control ml-search-input" name="searchInput" [(ngModel)]="searchInput" placeholder="Nunca dejes de buscar" required>
+  <button (click)="searchForm.valid && onSearch()">Buscar</button>
+</form>

@@ -1,0 +1,11 @@
+<div *ngIf="articles">
+  <div *ngFor="let article of articles">
+    <a [routerLink]="['/items', article.id]" routerLinkActive="active">
+      <img [src]="article.picture" [alt]="article.title" />
+      {{ article.price.currency }} {{ article.price.decimals | number }}
+      <span *ngIf="!article.free_shipping"></span>
+      {{ article.location.city }} ({{ article.location.state }})
+      {{ article.title }}
+    </a>
+  </div>
+</div>
