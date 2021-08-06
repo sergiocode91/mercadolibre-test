@@ -1,6 +1,8 @@
 {
   "name": "frontend",
   "version": "0.0.0",
+  "description": "API Mercado Libre Test",
+  "author": "Sergio Rojas Encina",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
