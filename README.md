@@ -15,5 +15,6 @@ $ git clone https://github.com/sergiodev91/mercadolibre-test
 ```
 $ npm install
 ```
+```
 $ ng serve
 ```
