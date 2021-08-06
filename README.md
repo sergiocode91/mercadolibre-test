@@ -8,10 +8,12 @@ Este proyecto ha sido generado con [Angular CLI](https://github.com/angular/angu
 
 #### Clonar repositorio
 ```
-$ git clone https://github.com/srojas091/angualar-themoviedb-api.git
+$ git clone https://github.com/sergiodev91/mercadolibre-test
 ```
 
-#### Instalar dependencias
+#### Instalar dependencias Front-End
 ```
 $ npm install
+```
+$ ng serve
 ```
