@@ -1,12 +1,16 @@
-<div *ngIf="article" class="ml-container">
-  <img [src]="article.picture" [alt]="article.title" />
-  {{ article.condition === "new" ? "Nuevo" : "Usado" }} -
-  {{ article.sold_quantity }} vendidos
-  {{ article.title }}
-  {{ article.price.currency }} {{ article.price.decimals | number }}
-  <span *ngIf="!article.free_shipping" class="ml-shipping-icon"></span>
-  <button type="button">Comprar</button>
-  <br>
-  <div class="ml-title">Descripción del producto</div>
-  {{ article.description }}
+<app-breadcrumb [categories]="categories"></app-breadcrumb>
+<div class="card-inner" *ngIf="article">
+  <div class="product">
+    <div class="product__image">
+      <img [src]="article.picture" [alt]="article.title" />
+    </div>
+    <div class="product__detail">
+      <span class="product__detail--qty">{{ article.condition === "new" ? "Nuevo" : "Usado" }} - {{ article.sold_quantity }} vendidos</span>
+      <h2 class="product__detail--title">{{ article.title }}</h2>
+      <span class="product__detail--price">{{ article.price.decimals | currency : 'USD' : 'symbol' : '1.0-0' }}</span>
+      <button type="button">Comprar</button>
+    </div>
+  </div>
+  <h3 class="subtitle">Descripción del producto</h3>
+  <p class="paragraph">{{ article.description }}</p>
 </div>

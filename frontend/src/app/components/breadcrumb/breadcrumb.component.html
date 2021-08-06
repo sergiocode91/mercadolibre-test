@@ -1,1 +1,6 @@
-<p>breadcrumb works!</p>
+<div class="breadcrumb" *ngIf="categories">
+  <span *ngFor="let categorie of categories; last as isLast">
+      <a [routerLink]="['/items']" [queryParams]="{ search: categorie }" routerLinkActive="active">{{ categorie }}</a>
+      <span class="arrow" *ngIf="!isLast">></span>
+  </span>
+</div>

@@ -1,4 +1,17 @@
-<form #searchForm="ngForm" (ngSubmit)="searchForm.valid && onSearch()">
-  <input type="text" class="form-control ml-search-input" name="searchInput" [(ngModel)]="searchInput" placeholder="Nunca dejes de buscar" required>
-  <button (click)="searchForm.valid && onSearch()">Buscar</button>
-</form>
+<header class="header">
+  <div class="container">
+    <div class="header-grid">
+      <div class="header-grid__brand">
+        <a href="/">
+          <img src="assets/images/logo-meli.png" alt="Logo Mercado Libre">
+        </a>
+      </div>
+      <form class="header-grid__form" #searchForm="ngForm" (ngSubmit)="searchForm.valid && onSearch()">
+        <input type="text" class="form-control ml-search-input" name="searchInput" [(ngModel)]="searchInput" placeholder="Nunca dejes de buscar" required>
+        <button (click)="searchForm.valid && onSearch()">
+          <img src="assets/images/icon-search.png" alt="">
+        </button>
+      </form>
+    </div>
+  </div>
+</header>

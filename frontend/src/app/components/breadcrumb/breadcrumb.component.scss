@@ -1,0 +1,11 @@
+@import '../../../assets/themes/variables';
+
+.breadcrumb {
+  font-size: $font-size-13;
+  color: $color-grey;
+  padding: 20px 0;
+
+  .arrow {
+    margin: 0 5px;
+  }
+}
