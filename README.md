@@ -11,10 +11,18 @@ Este proyecto ha sido generado con [Angular CLI](https://github.com/angular/angu
 $ git clone https://github.com/sergiodev91/mercadolibre-test
 ```
 
-#### Instalar dependencias Front-End
+#### Instalación Front-End
 ```
 $ npm install
 ```
 ```
 $ ng serve
+```
+
+#### Instalación Back-End
+```
+$ npm install
+```
+```
+$ npm start
 ```
